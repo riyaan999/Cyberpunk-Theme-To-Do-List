@@ -1,0 +1,120 @@
+.history-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(13, 14, 33, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 255, 242, 0.1);
+    border: 1px solid rgba(0, 255, 242, 0.1);
+    animation: historyGlow 4s infinite alternate;
+}
+
+.history-container h2 {
+    color: #00fff2;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 255, 242, 0.5);
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.history-item {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgba(13, 14, 33, 0.7);
+    box-shadow: 0 2px 8px rgba(0, 255, 242, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 255, 242, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.history-item:hover {
+    transform: translateX(4px);
+}
+
+.history-item.active {
+    border-left: 4px solid #00fff2;
+}
+
+.history-item.completed {
+    border-left: 4px solid #00ff9d;
+}
+
+.history-item.deleted {
+    border-left: 4px solid #ff0055;
+}
+
+.history-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: inherit;
+    filter: blur(4px);
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.task-text {
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 255, 242, 0.3);
+}
+
+.task-status {
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.active .task-status {
+    background-color: rgba(0, 255, 242, 0.1);
+    color: #00fff2;
+    border: 1px solid rgba(0, 255, 242, 0.3);
+}
+
+.completed .task-status {
+    background-color: rgba(0, 255, 157, 0.1);
+    color: #00ff9d;
+    border: 1px solid rgba(0, 255, 157, 0.3);
+}
+
+.deleted .task-status {
+    background-color: rgba(255, 0, 85, 0.1);
+    color: #ff0055;
+    border: 1px solid rgba(255, 0, 85, 0.3);
+}
+
+.timestamps {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-family: 'Courier New', monospace;
+}
+
+@keyframes historyGlow {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 255, 242, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 40px rgba(0, 255, 242, 0.2);
+    }
+}
