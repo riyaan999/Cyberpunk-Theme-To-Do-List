@@ -1,7 +1,6 @@
 
 ---
 
-```markdown
 # ⚡ Futuristic To-Do List Application
 
 A modern, **cyberpunk-themed** To-Do List application built with **React** and **Vite**, featuring a sleek, neon-inspired UI and powerful task management features.
@@ -124,6 +123,3 @@ This project is licensed under the **MIT License**.
 
 ```
 
----
-
-Let me know if you want a markdown file version (`README.md`) or if you'd like help generating the screenshots or adding contributor badges.
