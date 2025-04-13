@@ -1,125 +1,89 @@
 
----
+# Futuristic Todo List Application
 
-# ⚡ Futuristic To-Do List Application
+A modern, cyberpunk-themed Todo List application built with React and Vite, featuring a sleek user interface and powerful task management capabilities.
 
-A modern, **cyberpunk-themed** To-Do List application built with **React** and **Vite**, featuring a sleek, neon-inspired UI and powerful task management features.
+## Features
 
----
+- **Cyberpunk-Inspired Design**: Stunning visual aesthetics with neon accents, glitch effects, gradients, and modern UI elements.
+- **Task Management**: Add, delete, and mark tasks as complete or incomplete.
+- **Task History Tracking**: Built-in logging system to track all task-related actions.
+- **Responsive Layout**: Fully responsive design that works seamlessly across all devices.
+- **Real-time Updates**: Instant visual feedback for all task operations.
+- **Animated Components**: Smooth transitions and animations for enhanced user experience.
 
-## ✨ Features
+## Technology Stack
 
-- 🎨 **Cyberpunk-Inspired UI**  
-  Neon green & cyan color palette, glitch animations, glowing elements, and high-contrast grid backgrounds for a futuristic visual appeal.
+- **Frontend Framework**: React
+- **Build Tool**: Vite
+- **Styling**: CSS with Flexbox, Grid, Neon Effects, and Animations
+- **State Management**: React Hooks
+- **Development Environment**: Node.js
 
-- ✅ **Task Management**  
-  Add, delete, and toggle completion status of tasks with real-time feedback.
+## Installation
 
-- 🕒 **Task History Tracking**  
-  All actions are logged and printed to the console for tracking and debugging.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/riyaan999/Cyberpunk-Theme-To-Do-List.git
+   ```
 
-- 📱 **Responsive Layout**  
-  Works seamlessly across all devices using modern CSS (Flexbox/Grid).
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- ⚡ **Real-Time Interactivity**  
-  Immediate visual updates for all user interactions.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-- 🎞️ **Animated Components**  
-  Smooth transitions, glowing button hover effects, and glitch effects enhance UX.
+4. Open your browser and navigate to:
+   ```
+   http://localhost:5173
+   ```
 
----
+## Usage
 
-## 🧰 Technology Stack
+### Adding Tasks:
 
-| Tool / Library    | Purpose                    |
-|------------------|----------------------------|
-| ⚛️ React         | Frontend UI Framework      |
-| ⚡ Vite           | Lightning-fast build tool  |
-| 🎨 CSS           | Styling & animations        |
-| 🧠 React Hooks   | State management            |
-| 🌐 Node.js       | Development environment     |
+- Type your task in the input field.
+- Click the "Add" button or press Enter.
 
----
+### Managing Tasks:
 
-## 🧪 Installation & Setup
+- Click the checkbox to mark a task as complete.
+- Click the delete button to remove a task.
+- Completed tasks will be visually distinguished.
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/Cyberpunk-Theme-To-Do-List.git
-cd Cyberpunk-Theme-To-Do-List
+### Task History:
 
-# 2. Install dependencies
-npm install
+- All task actions are automatically logged.
+- You can view task history in the console for debugging and tracking.
 
-# 3. Run the development server
-npm run dev
-```
-
-🔗 Open your browser and visit: `http://localhost:5173`
-
----
-
-## 🚀 Usage
-
-### ➕ Adding Tasks
-- Type a task in the input field.
-- Click **Add** or press **Enter**.
-
-### ✅ Completing/Deleting Tasks
-- Check the box to mark a task complete.
-- Click 🗑️ to delete a task.
-
-### 📜 Task History
-- All actions (add/delete/toggle) are logged in the browser console.
-
----
-
-## 🗂 Project Structure
+## Project Structure
 
 ```
 src/
-├── components/         
-│   ├── ToDoList.jsx        # Main to-do list logic
-│   └── TaskHistory.jsx     # Console logger
+├── components/         # React components
+│   ├── ToDoList.jsx    # Main todo list component
+│   └── TaskHistory.jsx # Task history component
 ├── utils/
-│   └── script.js           # Utility logic
-├── assets/                # Static assets (fonts, images)
-└── index.css              # Cyberpunk-themed global styles
+│   └── script.js       # Utility functions
+└── assets/             # Static assets
 ```
 
----
+## Contributing
 
-## 🌌 Cyberpunk Styling Highlights
+Contributions are welcome! Please fork the repository and submit a pull request.
 
-- Glowing neon buttons and headings
-- Glitch animation effect (`.glitch-effect`)
-- Grid-pattern background and text shadows
-- Modern input field styles with glow borders
-- Fully dark-mode compatible (light mode removed)
-- Custom text selection styling
+### Project Contributors
 
-> Inspired by futuristic cyberpunk aesthetics seen in media like *Cyberpunk 2077* and *Blade Runner*.
+| Contributor  | GitHub Profile                                | Contribution Summary                             |
+|--------------|------------------------------------------------|--------------------------------------------------|
+| Riyaan C     | [@riyaan999](https://github.com/riyaan999)     | Original Creator, Initial Structure & Logic     |
+| Akshat Jain  | [@akshat-d-jain](https://github.com/akshat-d-jain)   | UI Enhancements, Cyberpunk Styling, README Edit |
 
----
+## License
 
-## 🤝 Contributing
-
-Pull requests are welcome! Feel free to fork the repo and enhance features, styling, or performance.
-
-> **Contributed by:** [Akshat Dinesh Jain](https://github.com/akshatdjain)  
-> ✨ Added modern cyberpunk UI enhancements
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-
-
----
-
+This project is open source and available under the [MIT License](LICENSE).
 ```
-
