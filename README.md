@@ -1,6 +1,4 @@
 
-
-```
 # Futuristic Todo List Application
 
 A modern, cyberpunk-themed Todo List application built with React and Vite, featuring a sleek user interface and powerful task management capabilities.
@@ -83,7 +81,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 | Contributor  | GitHub Profile                                | Contribution Summary                             |
 |--------------|------------------------------------------------|--------------------------------------------------|
 | Riyaan C     | [@riyaan999](https://github.com/riyaan999)     | Original Creator, Initial Structure & Logic     |
-| Akshat Jain  | [@akshat-d-jain]((https://github.com/akshat-d-jain/)   | UI Enhancements, Cyberpunk Styling, README Edit |
+| Akshat Jain  | [@akshat-d-jain](https://github.com/akshat-d-jain)   | UI Enhancements, Cyberpunk Styling, README Edit |
 
 ## License
 
