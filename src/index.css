@@ -1,11 +1,14 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark;
+  color: #00ff00;
+  background-color: #0a0a0a;
+  background-image: linear-gradient(45deg, #1a1a1a 25%, transparent 25%),
+    linear-gradient(-45deg, #1a1a1a 25%, transparent 25%);
+  background-size: 4px 4px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,11 +18,15 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #00ffff;
   text-decoration: inherit;
+  position: relative;
+  transition: all 0.3s ease;
 }
+
 a:hover {
-  color: #535bf2;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff;
 }
 
 body {
@@ -28,41 +35,98 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: repeating-linear-gradient(
+    45deg,
+    #0a0a0a,
+    #0a0a0a 10px,
+    #0f0f0f 10px,
+    #0f0f0f 20px
+  );
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: 0;
+  border: 2px solid #00ff00;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
+  color: #00ff00;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
 }
 
+button:hover {
+  border-color: #00ffff;
+  color: #00ffff;
+  box-shadow: 0 0 15px #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 20px #00ff00;
+}
+
+/* Remove light mode */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #00ff00;
+    background-color: #0a0a0a;
   }
   a:hover {
-    color: #747bff;
+    color: #00ffff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: transparent;
   }
+}
+
+/* Add new cyberpunk elements */
+.glitch-effect {
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 2px) }
+  40% { transform: translate(-2px, -2px) }
+  60% { transform: translate(2px, 2px) }
+  80% { transform: translate(2px, -2px) }
+  100% { transform: translate(0) }
+}
+
+input {
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  padding: 0.8em;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+::selection {
+  background: #00ff00;
+  color: #000000;
 }
