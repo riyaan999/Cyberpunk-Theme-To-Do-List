@@ -78,12 +78,12 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ### Project Contributors
 
-| Contributor  | GitHub Profile                                | Contribution Summary                             |
-|--------------|------------------------------------------------|--------------------------------------------------|
-| Riyaan C     | [@riyaan999](https://github.com/riyaan999)     | Original Creator, Initial Structure & Logic     |
-| Akshat Jain  | [@akshat-d-jain](https://github.com/akshat-d-jain)   | UI Enhancements, Cyberpunk Styling, README Edit |
+| Contributor   | GitHub Profile                                      | Contribution Summary                                  |
+|---------------|-----------------------------------------------------|-------------------------------------------------------|
+| Riyaan C      | [@riyaan999](https://github.com/riyaan999)          | Original Creator, Initial Structure & Logic          |
+| Akshat Jain   | [@akshat-d-jain](https://github.com/akshat-d-jain)  | UI Enhancements, Cyberpunk Styling, README Edit      |
+| Kaushik More  | [@Kausickkk](https://github.com/Kausickkk)          | Preview Wrapper, Error Boundary, UX Improvements     |
 
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-```
